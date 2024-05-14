@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <!-- Placeholders for Parking Spots -->
+    <TextView
+        android:id="@+id/spot_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="Spot 1"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/spot_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="Spot 2"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/spot_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="Spot 3"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spot_1" />
+
+    <TextView
+        android:id="@+id/spot_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="Spot 4"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spot_2" />
+
+    <TextView
+        android:id="@+id/available_spots"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="4/4 places disponibles"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/spot_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
